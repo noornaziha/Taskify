@@ -247,8 +247,8 @@ button {
 
 .brand h2 {
   margin: 0;
-  font-size: 20px;
-  font-weight: 750;
+  font-size: 25px;
+  font-weight:750;
   letter-spacing: 1px;
 }
 
@@ -275,7 +275,8 @@ button {
   background: transparent;
   color: #101638;
   text-align: left;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: 500;
   transition: background 0.2s ease;
 }
 
@@ -303,7 +304,7 @@ button {
   border-radius: 20px;
   color: #425071;
   background: #e6eaf4;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .active-count {
@@ -327,7 +328,7 @@ button {
 .section-heading h3 {
   margin: 0;
   color: #5d6b91;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.3px;
 }
@@ -382,8 +383,8 @@ button {
 }
 
 .crown-icon {
-  width: 39px;
-  height: 36px;
+  width: 35px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -394,20 +395,21 @@ button {
 }
 
 .productivity-card h3 {
-  margin: 0 0 10px;
-  font-size: 17px;
+  margin: 0 0 5px;
+  /* margin:0; */
+  font-size: 15px;
 }
 
 .productivity-card p {
   margin: 0 0 16px;
   color: #58678f;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.3;
 }
 
 .new-list-button {
   width: 100%;
-  min-height: 45px;
+  min-height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,7 +445,7 @@ button {
 
 .search-box {
   width: min(750px, 75%);
-  height: 56px;
+  height: 40px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -464,6 +466,7 @@ button {
 
 .search-box input::placeholder {
   color: #657292;
+  font-size: 12px;
 }
 
 .top-actions {
@@ -500,21 +503,79 @@ button {
 }
 
 .profile-avatar {
-  width: 46px;
-  height: 46px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   background: linear-gradient(135deg, #8c43e9, #6331dc);
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* Main content placeholder */
 .content-area {
-  padding: 30px;
+  /* padding: 30px; */
+  margin: 20px;
   min-height: calc(100vh - 98px);
+}
+
+
+/* Content Header */
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 20px; */
+  /* margin-bottom: 24px; */
+}
+
+.content-title h1 {
+  margin: 0 0 5px;
+  color: #101638;
+  font-size: 16px;
+  /* font-weight: 750; */
+}
+
+.content-title p {
+  margin: 0;
+  color: #5d6b91;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Task Count and Sorting */
+.content-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.task-count {
+  color: #536185;
+  font-size: 12px;
+}
+
+.sort-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  color: #536185;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+}
+
+.sort-button strong {
+  color: #26345c;
+  font-weight: 500;
+}
+
+.sort-button svg {
+  color: #26345c;
 }
 
 /* Responsive layout */

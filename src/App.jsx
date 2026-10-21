@@ -160,7 +160,7 @@ function App() {
           <ul className="menu-list">
             <li>
               <button className="menu-item active">
-                <ListTodo size={20} />
+                <ListTodo size={15} />
                 <span>All Tasks</span>
                 <span className="count active-count">12</span>
               </button>
@@ -168,7 +168,7 @@ function App() {
 
             <li>
               <button className="menu-item">
-                <CalendarDays size={20} />
+                <CalendarDays size={15} />
                 <span>Today</span>
                 <span className="count">4</span>
               </button>
@@ -176,7 +176,7 @@ function App() {
 
             <li>
               <button className="menu-item">
-                <Star size={20} />
+                <Star size={15} />
                 <span>Important</span>
                 <span className="count">3</span>
               </button>
@@ -184,7 +184,7 @@ function App() {
 
             <li>
               <button className="menu-item">
-                <CircleCheck size={20} />
+                <CircleCheck size={15} />
                 <span>Completed</span>
                 <span className="count">5</span>
               </button>
@@ -204,7 +204,7 @@ function App() {
           <ul className="menu-list">
             <li>
               <button className="menu-item">
-                <Circle className="list-dot personal" size={15} />
+                <Circle className="list-dot personal" size={12} />
                 <span>Personal</span>
                 <span className="count">4</span>
               </button>
@@ -212,7 +212,7 @@ function App() {
 
             <li>
               <button className="menu-item">
-                <Circle className="list-dot work" size={15} />
+                <Circle className="list-dot work" size={12} />
                 <span>Work</span>
                 <span className="count">5</span>
               </button>
@@ -220,7 +220,7 @@ function App() {
 
             <li>
               <button className="menu-item">
-                <Circle className="list-dot learning" size={15} />
+                <Circle className="list-dot learning" size={12} />
                 <span>Learning</span>
                 <span className="count">3</span>
               </button>
@@ -228,7 +228,7 @@ function App() {
 
             <li>
               <button className="menu-item">
-                <Circle className="list-dot shopping" size={15} />
+                <Circle className="list-dot shopping" size={12} />
                 <span>Shopping</span>
                 <span className="count">2</span>
               </button>
@@ -239,7 +239,7 @@ function App() {
         {/* Productivity card */}
         <section className="productivity-card">
           <div className="crown-icon">
-            <Crown size={20} />
+            <Crown size={15} />
           </div>
 
           <h3>Stay Productive</h3>
@@ -282,9 +282,24 @@ function App() {
           </div>
         </header>
 
-        <main className="content-area">
           {/* All Tasks, Add Task, and task list will go here */}
-        </main>
+          <main className="content-area">
+          {/* Content Header */}
+           <div className="content-header">
+            <div className="content-title">
+              <h1>All Tasks</h1>
+              <p>Manage your daily tasks and stay productive.</p>
+            </div>
+            <div className="content-meta">
+              <span className="task-count">12 tasks</span>
+              <button className="sort-button">
+                <span>Sort:</span>
+                <strong>Latest</strong>
+                <ChevronDown size={15} />
+              </button>
+            </div>
+          </div>
+          </main>
       </div>
     </div>
   );
