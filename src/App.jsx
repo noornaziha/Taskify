@@ -290,12 +290,18 @@ function App() {
               <h1>All Tasks</h1>
               <p>Manage your daily tasks and stay productive.</p>
             </div>
-            <div className="content-meta">
+            {/* <div className="content-meta">
               <span className="task-count">12 tasks</span>
               <button className="sort-button">
                 <span>Sort:</span>
                 <strong>Latest</strong>
                 <ChevronDown size={15} />
+              </button>
+            </div> */}
+            <div>
+              <button className="add-task-button">
+                <Plus size={15} />
+                <span>Add Task</span>
               </button>
             </div>
           </div>
@@ -306,6 +312,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

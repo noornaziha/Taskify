@@ -570,15 +570,28 @@ button {
   font-size: 12px;
 }
 
-.sort-button {
+.add-task-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 0;
-  color: #536185;
-  background: transparent;
+
+  width: 120px;
+  height: 40px;
+  padding: 0 16px;
+
+  color: white;
+  background: #5938ff;
+
   border: none;
-  font-size: 13px;
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 200;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
 }
 
 .sort-button strong {
@@ -659,3 +672,4 @@ button {
     padding: 18px;
   }
 }
+
